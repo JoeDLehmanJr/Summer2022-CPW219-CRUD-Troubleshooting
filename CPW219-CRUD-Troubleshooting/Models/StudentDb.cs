@@ -17,10 +17,7 @@
 
         public static Student GetStudent(SchoolContext context, int id)
         {
-            Student p2 = context
-                            .Students
-                            .Where(s => s.StudentId == id)
-                            .Single();
+            Student p2 = context.Students.Where(s => s.StudentId == id).Single();
             return p2;
         }
 
